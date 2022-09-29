@@ -1,7 +1,7 @@
 # how-to-gpg-github
 How to create your GPG key and import it and sign your commits.
 
-## [Generate your GPG keys]
+### [Generate your GPG keys]
 You can easily generate your GPG keys using the gpg bundle.
 It'll all depend on the type of system you're working on. For MacOS, download [GPG Suite](https://gpgtools.org/) and generate your keys following the steps.
 Choose at least 4096 bytes and RSA.
@@ -21,4 +21,16 @@ To sign all your commits automatically (and not rely on `-S`):
 git config --global commit.gpgsign true 
 ```
 
-## [Adding GPG key to your Github account](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account)
+### [Adding GPG key to your Github account](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account)
+
+## Using GPG
+- Search for keys from other people:
+```bash
+gpg --search-keys <email>
+```
+
+- Get your complete public key:
+```bash
+gpg --armor --export <fingerprint> 
+```
+
