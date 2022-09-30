@@ -39,3 +39,7 @@ gpg --armor --export <fingerprint>
 curl https://api.github.com/users/Guilospanck/gpg_keys | jq ".[0].raw_key" -r | gpg --import 
 ```
 
+- Decrypt file
+```bash
+gpg --decrypt hello.go.gpg > hello.go
+```
