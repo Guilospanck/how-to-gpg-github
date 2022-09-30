@@ -34,3 +34,8 @@ gpg --search-keys <email>
 gpg --armor --export <fingerprint> 
 ```
 
+- Get GPG key from another GitHub user:
+```bash
+curl https://api.github.com/users/Guilospanck/gpg_keys | jq ".[0].raw_key" -r | gpg --import 
+```
+
