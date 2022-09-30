@@ -1,7 +1,7 @@
 # how-to-gpg-github
 How to create your GPG key and import it and sign your commits.
 
-### [Generate your GPG keys]
+### Generate your GPG keys
 You can easily generate your GPG keys using the gpg bundle.
 It'll all depend on the type of system you're working on. For MacOS, download [GPG Suite](https://gpgtools.org/) and generate your keys following the steps.
 Choose at least 4096 bytes and RSA.
